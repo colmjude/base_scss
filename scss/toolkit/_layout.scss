@@ -1,0 +1,15 @@
+// ----
+//
+// for layout related mixins and silent classes
+//
+// ----
+
+//
+// for creating circle elements
+//  Usage: @include circle(30px);
+//
+@mixin circle($dimension) {
+  width: $dimension;
+  height: $dimension;
+  border-radius: 50%;
+}
