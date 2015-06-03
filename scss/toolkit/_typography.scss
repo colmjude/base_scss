@@ -6,3 +6,20 @@
 @function em($px, $base: 19) {
   @return ($px / $base) + em;
 }
+
+// MIXIN
+// sets up basic link styles
+// need to change default colours
+@mixin link($colour: $link-colour, $hover-colour: $link-hover-colour, $visited-colour: $link-visited-colour, $decoration: none, $hover-decoration: underline) {
+  color: $link-colour;
+  text-decoration: $decoration;
+
+  &:visited {
+    color: $visited-colour;
+  }
+
+  &:hover {
+    color: $hover-colour;
+    text-decoration: $hover-decoration;
+  }
+}
