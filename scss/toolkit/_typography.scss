@@ -7,6 +7,13 @@
   @return ($px / $base) + em;
 }
 
+@mixin heading($font-size, $line-height: 1.2em) {
+  font-size: $font-size;
+  font-weight: 600;
+  line-height: $line-height;
+  color: $text-colour;
+}
+
 // MIXIN
 // sets up basic link styles
 // need to change default colours
