@@ -30,3 +30,14 @@
     text-decoration: $hover-decoration;
   }
 }
+
+// MIXIN - Smallcaps
+//
+// BEWARE: font-families that don’t support small caps
+// or don’t provide them with their web font.
+@mixin smallcaps($color, $font-weight) {
+    font-variant: small-caps;
+    font-weight: $font-weight;
+    text-transform: lowercase;
+    color: $color;
+}
