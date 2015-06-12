@@ -1,6 +1,16 @@
 // Helpers
 // ==========================================================================
 
+// MIXIN - Vendor Prefix
+//
+// Usage:
+// @include vendor-prefix(border-radius, 2px);
+@mixin vendor-prefix($name, $argument) {
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+        #{$prefix}#{$name}: $argument;
+    }
+}
+
 // Hide, but not for screenreaders
 .visuallyhidden {
   position: absolute;
