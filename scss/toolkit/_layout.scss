@@ -9,3 +9,9 @@
   height: $dimension;
   border-radius: 50%;
 }
+
+// MIXIN - border-radius
+@mixin border-radius($argument) {
+  @include vendor-prefix(border-radius, $argument);
+  background-clip: padding-box; /* stops bg leaking outside border */
+}
