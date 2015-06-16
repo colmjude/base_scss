@@ -39,6 +39,7 @@
     display: block;
     clear: both;
   }
-  @if $ie
+  @if $ie {
     *zoom: 1;
+  }
 }
