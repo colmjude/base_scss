@@ -1,0 +1,31 @@
+// set any globally required variables
+$ie: false;
+
+@import 'toolkit/helpers';
+@import 'toolkit/variables';
+@import 'toolkit/colours';
+@import 'toolkit/measurements';
+@import 'toolkit/media_queries';
+@import 'toolkit/layout';
+@import 'toolkit/typography';
+
+
+@import 'elements/globals';
+@import 'elements/typography';
+
+@import 'library/corner_fold';
+
+$text-colour: #414042;
+$yellow: #f4bd0f;
+$lighter-yellow: #f7d057;
+
+.hasfold {
+  background: $yellow;
+  color: $text-colour;
+  margin: $gutter;
+  padding: 2*$gutter;
+  font-size: 24px;
+  min-height: 400px;
+
+  @include folded_corner($colour: $lighter-yellow);
+}
