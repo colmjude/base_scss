@@ -51,3 +51,12 @@
     -o-hyphens: $val; // PRESTO...haha LOL
     hyphens: $val; // W3C standard
 }
+
+// MIXIN - truncate text
+//
+// ensure text doesn't overflow container and it breaks nicely
+@mixin truncateText($overflow: ellipsis){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow; // values are: clip, ellipsis, or a string
+}
