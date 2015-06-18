@@ -59,3 +59,20 @@ a {
 .link--underline {
   @include link($decoration: underline);
 }
+
+// An inline definition list - name:value pairs for example
+
+/* dd */.definition-inline {
+  @extend %contain-floats;
+  dt {
+    clear: left;
+    float: left;
+    margin-right: $gutter-half;
+    &:after {
+      content: ':';
+    }
+  }
+  dd {
+    float: left;
+  }
+}
