@@ -2,4 +2,7 @@
 // ==========================================================================
 // for site wide settings
 // usually imported after a reset
-
+.visually-hidden {
+  display: none;
+  visibility: hidden;
+}
