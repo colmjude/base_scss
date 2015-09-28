@@ -15,3 +15,14 @@
   @include vendor-prefix(border-radius, $argument);
   background-clip: padding-box; /* stops bg leaking outside border */
 }
+
+// for absolutely positioning an element
+//  Usage: @include absPos(5px, 20px, 10px, 15px);
+//
+@mixin absPos($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
